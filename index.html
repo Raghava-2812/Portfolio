@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Chittaluri Raghava</title>
+  <link rel="icon" href="https://cdn-icons-png.freepik.com/128/9670/9670786.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+  <header>
+    <div class="logo">
+      <div class="avatar">CR</div>
+      <div>
+        <h1>Chittaluri Raghava</h1>
+        <p class="tagline">Aspiring Full-Stack Engineer & Software Engineer</p>
+      </div>
+    </div>
+    <nav id="nav">
+      <button class="nav-btn" onclick="scrollToId('about')">About</button>
+      <button class="nav-btn" onclick="scrollToId('education')">Education</button>
+      <button class="nav-btn" onclick="scrollToId('projects')">Projects</button>
+      <button class="nav-btn" onclick="scrollToId('skills')">Skills</button>
+      <button class="nav-btn" onclick="scrollToId('contact')">Contact</button>
+      <button onclick="toggleTheme()" class="theme-btn">🌙Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Build. Code. Deliver.</h1>
+        <p>I’m a computer engineering student passionate about crafting modern web applications and solving complex
+          problems with Java and DSA. I focus on writing clean, efficient code and delivering smooth, user-friendly
+          experiences.</p>
+        <div class="hero-buttons">
+          <a onclick="scrollToId('projects')" class="primary-btn">View Projects</a>
+          <a onclick="scrollToId('contact')" class="secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-info">
+        <h3>Quick Info</h3>
+        <ul>
+          <li><strong>Location:</strong> India</li>
+          <li><strong>Availability:</strong> Open to internships</li>
+          <li><strong>Email:</strong> ch.raghava2004@gmail.com</li>
+          <li><strong>Resume:</strong> <a href="assets/Chittaluri_Raghava_Resume-1.pdf" target="_blank">View Resume</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h3>About Me</h3>
+      <p>I specialize in Full Stack Development and Java-based problem-solving (DSA). From building responsive
+        front-ends to developing scalable back-ends, I aim to turn ideas into functional products with precision and
+        performance.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h3>Education</h3>
+      <div class="education-list">
+        <div class="education-item">
+          <h4>B.Tech in Computer Engineering</h4>
+          <p>R.V.R & J.C college of Engineering, Guntur | 2023 - Present</p>
+          <p>CGPA: 9.67</p>
+        </div>
+        <div class="education-item">
+          <h4>Intermediate (10+2)</h4>
+          <p>NRI Junior College, Ongole | 2021 - 2023</p>
+          <p>Percentage: 98%</p>
+        </div>
+        <div class="education-item">
+          <h4>High School (10th Grade)</h4>
+          <p>SSSS Vidya Kendram, Ongole | 2016 - 2021</p>
+          <p>Percentage: 91%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h3>Selected Projects</h3>
+      <div id="project-list" class="grid"></div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h3>Skills</h3>
+      <div id="skills-list" class="skills"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact Me</h3>
+      <form onsubmit="submitForm(event)" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" required placeholder=" ">
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required placeholder=" ">
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" required placeholder=" "></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Chittaluri Raghava | Crafted with ❤️ using HTML, CSS, and JS</p>
+    <p>
+      <a id="l" href="https://www.linkedin.com/in/chittaluri-raghava-07916b36a" target="_blank">LinkedIn</a> 
+      <span>|</span>
+      <a id="g" href="https://www.github.com/Raghava-2812" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("j0NirmQN2lxlWDeND"); 
+  </script>
+
+</body>
+
+</html>
