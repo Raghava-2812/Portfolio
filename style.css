@@ -248,6 +248,9 @@ footer #g { background: #181717; }
 .dark nav button:hover { color: var(--accent-color); }
 
 .dark .secondary-btn { border-color: #ddd; color: #ddd; }
+.dark .primary-btn:hover{
+  background-color:#9f8b03;
+}
 
 .dark .form-group input, .dark .form-group textarea { color: #ccc; background: none; }
 .dark .form-group input:focus + label,
