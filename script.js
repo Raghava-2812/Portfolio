@@ -3,7 +3,7 @@ const projects = [
     title: "Online Quiz Application",
     desc: "Developed an interactive quiz platform with multiple-choice questions, score tracking, and responsive design using Python, HTML, CSS, and JavaScript.",
     tech: ["HTML", "CSS", "JavaScript", "Python"],
-    url: "https://Raghava-2812.github.io/Quiz_App"
+    url: "https://Raghava-2812.github.io/Quiz-App"
   },
   {
     title: "Task Manager",
